@@ -1,0 +1,125 @@
+/* Import font Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Gaya umum */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F9F9E0; /* Warna pink baby */
+    color: #3AA6B9;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    color: #3AA6B9; /* Aksen warna mint */
+}
+
+/* Gaya umum untuk tombol */
+.btn {
+    padding: 15px 30px;
+    background-color: #3AA6B9; /* Warna mint */
+    color: #F9F9E0; /* Pink baby untuk teks */
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    outline: none;
+}
+
+.btn:hover {
+    background-color: #329aa4; /* Warna mint yang lebih gelap saat hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px); /* Efek hover naik sedikit */
+}
+
+.btn:active {
+    transform: translateY(0); /* Kembali normal saat diklik */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animasi fade-in untuk teks */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Hero Section */
+.hero-section {
+    background: #F9F9E0; /* Pink yang lebih terang */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3AA6B9;
+    text-align: center;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-section .overlay {
+    background: #FFD0D0; /* Warna mint dengan transparansi */
+    padding: 80px;
+    border-radius: 10px;
+}
+
+/* Modal (untuk konten) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3AA6B9; /* Mint transparan */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #F9F9E0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    width: 60%;
+}
+
+.close {
+    float: right;
+    color: #FF9EAA;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #F9F9E0; /* Warna mint */
+    color: #3AA6B9;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Musik Latar */
+.music-control {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #FFD0D0; /* Warna mint */
+    color: #3AA6B9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.music-control:hover {
+    background-color: #FFD0D0; /* Warna mint lebih gelap saat hover */
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APA INII??</title>
+    <!-- Link ke CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Halaman Utama -->
+    <header class="hero-section">
+        <div class="overlay">
+            <h1>For you, My Princess</h1>
+            <p>Ini berisi tentang hal yang aku sampaikan kepada princess ketika tidur semalam :p</p>
+            <button class="btn" id="startReading">Mulai Membaca</button>
+        </div>
+    </header>
+
+    <!-- Konten Modal -->
+    <div id="contentModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeContent">&times;</span>
+            <div id="modalBody"></div>
+            <button class="btn" id="nextBtn">Selanjutnya</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Dari Jamet Kesayanganmu</p>
+    </footer>
+
+    <!-- Musik Latar -->
+    <button class="music-control" id="toggleMusic">Matikan Musik</button>
+    <audio id="backgroundMusic" loop>
+        <source src="audio/music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Link ke JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
